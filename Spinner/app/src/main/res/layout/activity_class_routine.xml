@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/myRoutine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_routine"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Routine"
+        android:textSize="22sp"
+        android:layout_marginLeft="104dp"
+        android:textColor="#111"
+        android:textStyle="bold"
+        android:id="@+id/textView_routine"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/year_routine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:text="Year"
+        android:textColor="#111"
+        android:textSize="18sp"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignTop="@+id/myRoutine"
+        android:layout_toLeftOf="@+id/semester_routine"
+        android:layout_toStartOf="@+id/semester_routine" />
+    <TextView
+        android:id="@+id/semester_routine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester"
+        android:textColor="#111"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/year_routine"
+        android:layout_alignBottom="@+id/year_routine"
+        android:layout_alignLeft="@+id/textView_routine"
+        android:layout_alignStart="@+id/textView_routine"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp" />
+
+    <TextView
+        android:id="@+id/section_routine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Section"
+        android:textColor="#111"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignBaseline="@+id/semester_routine"
+        android:layout_alignBottom="@+id/semester_routine"
+        android:layout_toRightOf="@+id/semester_routine"
+        android:layout_toEndOf="@+id/semester_routine" />
+
+    <TextView
+        android:id="@+id/textView_no_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="166dp"
+        android:textSize="42sp"
+        android:layout_below="@+id/semester_routine"
+        android:layout_centerHorizontal="true"
+        android:textColor="#111"/>
+
+    <TextView
+        android:id="@+id/textView_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_routine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

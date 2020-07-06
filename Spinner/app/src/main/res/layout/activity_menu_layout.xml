@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <Button
+        android:id="@+id/btn_routine"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:onClick="classRoutine"
+        android:background="@drawable/calendar"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView_routine" />
+    <TextView
+        android:id="@+id/textView_routine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Routine"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#931515"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/btn_routine"
+        android:layout_toStartOf="@+id/textView_cgpa"
+        android:layout_marginEnd="37dp" />
+
+    <Button
+        android:id="@+id/btn_cgpa"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/calculation"
+        android:layout_marginEnd="29dp"
+        android:layout_above="@+id/textView_routine"
+        android:layout_alignParentEnd="true"
+        android:onClick="cgpaCalculator"/>
+
+    <TextView
+        android:id="@+id/textView_cgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CGPA Calculator"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FF931515"
+        android:layout_alignBaseline="@+id/textView_routine"
+        android:layout_alignBottom="@+id/textView_routine"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:id="@+id/btn_quiz"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/notepad"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView_routine"
+        android:layout_alignEnd="@+id/textView_routine"
+        android:onClick="quizReminder"/>
+
+    <TextView
+        android:id="@+id/textView_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIZ Reminder"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FF931515"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/btn_quiz"
+        android:layout_alignStart="@+id/textView_routine" />
+
+    <Button
+        android:id="@+id/btn_details"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/notebook"
+        android:layout_above="@+id/textView_quiz"
+        android:layout_alignStart="@+id/btn_cgpa"/>
+
+    <TextView
+        android:id="@+id/textView_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Running Class\n\t\t\t\t\tDetails"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FF931515"
+        android:layout_below="@+id/btn_details"
+        android:layout_alignEnd="@+id/textView_cgpa" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/seo"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView_details"
+        android:layout_alignEnd="@+id/textView_details" />
+
+    <TextView
+        android:id="@+id/textView_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FF931515"
+        android:layout_marginLeft="170dp"
+        android:layout_below="@+id/btn_about"
+        android:layout_alignEnd="@+id/btn_details"
+        android:layout_marginTop="9dp" />
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:onClick="profile"
+        android:background="@drawable/profile"
+        android:layout_above="@+id/textView_about"
+        android:layout_alignStart="@+id/textView_quiz" />
+
+    <TextView
+        android:id="@+id/textView_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_about"
+        android:layout_alignStart="@+id/btn_quiz"
+        android:layout_marginStart="16dp"
+        android:text="Profile"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FF931515"/>
+
+
+</RelativeLayout>

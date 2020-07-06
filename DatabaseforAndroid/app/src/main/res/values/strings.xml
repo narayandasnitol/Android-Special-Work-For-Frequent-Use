@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Database for Android</string>
+    <string name="name">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="marks">Marks:</string>
+    <string name="add">ADD</string>
+    <string name="view">View</string>
+    <string name="delete_data">Delete</string>
+    <string name="update">Update</string>
+    <string name="id">ID:</string>
+</resources>
